@@ -1,18 +1,19 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HalfPage path="M18.31 8.22H0M11.16 1l7.15 7.15-7.33 7.34" />
+    <BigText />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import HalfPage from '@/components/HalfPage.vue'
+import BigText from '@/components/BigText.vue'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    HalfPage, BigText
   }
 }
 </script>
