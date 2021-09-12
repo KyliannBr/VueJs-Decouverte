@@ -6,7 +6,7 @@
                 </div>
                 <div class="button">
                     <svg width="0" height="16" xmlns="http://www.w3.org/2000/svg"><g stroke="#fff" fill="none" fill-rule="evenodd"><path :d="path"></path></g></svg>
-                    <a href="https://fr.roccat.com/products/magma">{{text}}</a>
+                    <router-link to="/about">{{text}}</router-link>
                 </div>
             </div>
             
@@ -16,7 +16,7 @@
                 </div>
                 <div class="button">
                     <svg width="0" height="16" xmlns="http://www.w3.org/2000/svg"><g stroke="#fff" fill="none" fill-rule="evenodd"><path :d="path"></path></g></svg>
-                    <a href="https://fr.roccat.com/products/magma">{{text}}</a>
+                    <router-link to="/about">{{text}}</router-link>
                 </div>
             </div>
         </setion>

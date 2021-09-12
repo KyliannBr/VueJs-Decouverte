@@ -2,8 +2,7 @@
   <div id="nav">
     <router-link to="/">
       <img src="@/assets/logo.png" alt="" width="50">
-    </router-link>
-    <router-link to="/">Home</router-link> |
+    </router-link> |
     <router-link to="/about">About</router-link>
   </div>
   <router-view/>
@@ -44,10 +43,11 @@
     place-items: center;
 }
 
-#nav router-link {
+#nav a {
   display: flex;
     place-content: center;
     place-items: center;
+    padding: 0 5rem;
     height: 5rem;
     width: 15rem;
     font-size: 1.3rem;

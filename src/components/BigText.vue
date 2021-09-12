@@ -1,22 +1,16 @@
 <template>
     <div class="bigText">
-        <span class="up"></span>
+        <span class="l1"></span>
         <h2>Roccat Magma</h2>
-        <span class="down"></span>
+        <span class="l2"></span>
     </div>
 </template>
     
 <script>
+
 export default {
     name: 'BigText',
 };
-
-// document.getElementById("barreSoulignement").animate([
-//     {transform: 'translateX(-31rem)'},
-//     {transform: 'translateX(0rem)'},
-// ], {
-//     duration: 1500,
-// });
 
 </script>
 
@@ -25,12 +19,11 @@ export default {
     .bigText {   
         z-index: 999;
         position: absolute;
-        top: 10rem;
+        top: 7rem;
         text-align: center;
         font-size: 5rem;
         color: var(--palePink);
         width: 100%;
-        height: 10rem;
         display: flex;
         place-content: center;
         place-items: center;
@@ -43,20 +36,25 @@ export default {
         color: var(--palePink);
         width: 100%;
         animation: fade 1s ease-in-out forwards; 
+        padding: 1rem 0;
     }
-    span.up {
+    span.l1 {
         width: 30rem;
         height: .5rem;
         background-color: aqua;
-        transform: translateY(0rem);
         animation: slideUp .8s ease-in-out forwards;
     }
-    span.down {
+    span.l2 {
         width: 30rem;
         height: .5rem;
         background-color: aqua;
-        transform: translateY(1rem);
         animation: slideDown .8s ease-in-out forwards;
+    }
+
+    p {
+        margin-top: 2rem;
+        font-size: 1.5rem;
+        width: 30rem;
     }
 
     @keyframes slideUp {
